@@ -1,0 +1,49 @@
+#task 1
+
+attendees = int(input("Enter number of attendees: "))  # Convert input to integer
+venue = "large hall" if attendees > 100 else "conference room"
+print(venue)
+
+#task 2
+
+attendees = int(input("Enter number of attendees: "))  # Convert input to integer
+venue = "large hall" if attendees > 100 else "conference room"
+facilities = ""
+
+if attendees > 150:
+    facilities += "audio system and "
+if attendees > 200:
+    facilities += "projector and "
+
+if facilities:
+    print(f"The recommended venue is {venue} with the following facilities: {facilities[:-5]}.")
+else:
+    print(f"The recommended venue is {venue}.")
+
+
+#task 3
+
+# Get the number of attendees
+attendees = int(input("Enter number of attendees: "))  
+
+# Recommend venue based on the number of attendees
+venue = "large hall" if attendees > 100 else "conference room"
+
+# Recommend additional facilities based on the number of attendees
+facilities = ""
+if attendees > 150:
+    facilities += "audio system and "
+if attendees > 200:
+    facilities += "projector and "
+    
+# Ask if the user wants vegetarian food
+vegetarian_choice = input("Do you want vegetarian food? (yes/no): ")
+
+# Recommend catering services based on the user's choice
+caterer = "Veggie Delight Caterers" if vegetarian_choice.lower() == "yes" else "Gourmet Meals Caterers"
+
+# Print recommendations
+if facilities:
+    print(f"The recommended venue is {venue} with the following facilities: {facilities[:-5]}, and catering by {caterer}.")
+else:
+    print(f"The recommended venue is {venue} and catering by {caterer}.")
