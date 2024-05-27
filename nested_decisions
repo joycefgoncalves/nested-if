@@ -1,0 +1,60 @@
+#task 1
+
+
+place = input("Choose a place: forest or cave? ")
+
+if place == "forest":  # Use '==' for comparison, not '='
+    action = input("climb a tree or cross a river?")
+    if action == "climb a tree":  # Use '==' for comparison, not '='
+        print("You found a bird's nest!")
+    elif action == "cross a river":  # Use '==' for comparison, not '='. Corrected 'else' to 'elif'
+        print("You found a boat!")
+elif place == "cave":  # Use '==' for comparison, not '='
+    print("You find a hidden treasure!")
+
+
+
+#task 2
+
+place = input("Choose a place: forest or cave? ")
+
+if place == "forest":
+    action = input("climb a tree or cross a river?")
+    if action == "climb a tree":
+        print("You found a bird's nest!")
+    elif action == "cross a river":
+        print("You found a boat!")
+elif place == "cave":
+    torch = input("Would you like to light a torch or proceed in the dark?")
+    if torch == "light a torch":
+        print("You light a torch and discover a hidden passage.")
+    elif torch == "proceed in the dark":
+        print("You proceed in the dark and stumble upon a treasure chest!")
+
+
+
+#task 3
+
+
+place = input("Choose a place: forest or cave? ")
+
+if place == "forest":
+    action = input("climb a tree or cross a river?")
+    if action == "climb a tree":
+        print("You found a bird's nest!")
+    elif action == "cross a river":
+        print("You found a boat!")
+    else:
+        pass  # Handle invalid choice
+elif place == "cave":
+    torch = input("Would you like to light a torch or proceed in the dark?")
+    if torch == "light a torch":
+        print("You light a torch and discover a hidden passage.")
+    elif torch == "proceed in the dark":
+        print("You proceed in the dark and stumble upon a treasure chest!")
+    else:
+        pass  # Handle invalid choice
+else:
+    pass  # Handle invalid choice
+
+
